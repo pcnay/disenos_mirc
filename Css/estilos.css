@@ -1,0 +1,106 @@
+@import url('reset.css');
+@import url('fuentes.css');
+
+/* Estilos Generales */
+body
+{
+  background:#2d2d2d; /* Color de fondo de la pantalla principal */
+  font-family:Arial,Helvetica,Sans-serif;
+}
+
+a
+{
+  text-decoration:none; /* Elimina el subrayado */
+  color:#fff;
+}
+a:hover /* Cuando se pase el raton encima del enlace */
+{
+  text-decoration:underline;
+}
+
+/*Accesando a la sección del Wrap contenedor principal, sin afectar el encabezado */
+#wrap
+{
+  width:960px; /* Ancho máximo */
+  margin:auto; /* Centrar la pantalla */
+  clear:both; /* Limpia los lados del encabezado */
+}
+
+/* Header */
+header
+{
+  width:100%;
+  float:right;
+  /* Aplicando el efecto gradiente del encabezado */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e4e0e0+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e4e0e0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e4e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#e4e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4e0e0',GradientType=0 ); /* IE6*/
+  box-shadow:0px 3px 5px #000; /* Se agrega una sombra al encabezado */
+    moz-box-shadow:0px 3px 5px #000;
+    web-kit-box-shadow:0px 3px 5px #000;
+}
+
+#subheader /* Para poder centrar el encabezado y el menu de la página */
+{
+  width:960px;
+  margin:auto;
+}
+
+#logotipo
+{
+  float:left; /* Alinear a la izq. */
+  width:700px; /* Limitarlo a 300 pxs */
+  padding:10px 0px; /* 10px arriba y abajo, 0px a los lados */
+}
+
+#logotipo a /* Todos los enlaces "a", cambiando la fuente y el tamaño */
+{
+  font-family:sourcesans-light;
+  font-size:50px;
+  color:#000;
+}
+
+#logotipo a:hover /* Eliminado el subrayado al titulo */
+{
+  text-decoration:none;
+}
+
+/* Seccion Menu */
+
+/*Accesando a la sección a las opcione del menú  */
+header #subheader nav
+{
+  float:left;
+  width:260px; /* Es el ancho que le restaba al encabezado, 300 del nombre y el
+  resto le corresponde a las opciones del menu */
+  padding:30px 0px;
+  text-align:right;
+
+}
+header #subheader nav ul li /* Para modificar solamente el elemento "li" */
+{
+  display:inline; /* Para mostrar las opciones del menu en línea */
+  font-family:sourcesans; /* Cambiando la fuente de las opciones menu */
+}
+
+header #subheader nav ul li a /* Para modificar solamente el elemento "a",
+cambiando el color de las opciones del menu. */
+{
+  color:#000;
+  font-size:18px;
+  padding:10px;
+  border-radius:2px; /* Para que se pueden visualizar en los nav. antiguos */
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+}
+
+/*Realiza el efecto de recuadro de color Azul y letras Blancas */
+header #subheader nav ul li a:hover
+{
+  color:#fff;
+  background:#1798af;
+  text-decoration:none;
+}
